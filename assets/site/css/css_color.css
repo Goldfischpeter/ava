@@ -1,0 +1,159 @@
+/* 
+css: color 
+--------------------------------------------------
+AVA
+--------------------------------------------------
+by goldfischclub.de
+2017-02
+*/
+
+
+body, a, select, input, textarea {
+	color: #000;
+}
+
+/* grau, startseite */
+.bg-c-1 {
+	background-color: #ebeceb;
+}
+/* schwarz, detail-default */
+.bg-c-2 {
+	background-color: #000;
+}
+.bg-c-2 * {
+	color: #fff;
+}
+
+
+/* grün, bewerbung */
+.bg-c-3 {
+	background-color: #46c188;
+}
+/* lila, infomaterial */
+.bg-c-4 {
+	background-color: #b06bf9;
+}
+/* rot spiegelwet */
+.bg-c-5 {
+	background-color: #ff5740;
+}
+/* studienprogramme */
+.bg-c-6 {
+	background-color: #b19d9d;
+}
+/* vorstudium */
+.bg-c-7 {
+	background-color: #a6a17e;
+}
+/* onsight */
+.bg-c-8 {
+	background-color: #8bada9;
+}
+
+.mod-suchergebnisse li p.search_it-url {
+	color: #949494;
+}
+
+
+
+
+
+
+.header {
+	background-image: url(/assets/site/assets/ava-bg-header.png);
+	background-repeat: repeat;
+}
+
+.logo {
+	background-image: url(/assets/site/assets/ava-logo@1x.png);
+	background-repeat: no-repeat;
+}
+
+a.search-trigger {
+	background-image: url(/assets/site/assets/ava-ic-search@1x.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.subnav-select,
+.yform select {
+	background-image: url(/assets/site/assets/ava-ic-select.svg);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+.search  {
+	background-color: #000;
+}
+
+
+
+.nav-container,
+.logo-name,
+a.menu {
+	background-color: #000;
+}
+
+.nav-container p,
+.nav-container a,
+.nav-container .lvl2 a,
+.logo-name,
+a.menu {
+	color: #fff;
+}
+
+
+.nav-container .aktiv a {
+	/*color: #46c188;*/
+}
+
+
+
+/* grau */
+.nav-container strong,
+.nav-container .lvl1 a,
+.nav-container .lvl1 p {
+	color: #949794;
+}
+
+
+
+.galerie-back-btn {
+	background-image: url(/assets/site/assets/galerie-back@1x.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+
+.footer a  {
+	-webkit-box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+	color: #000;
+}
+
+.footer a.spiegelwelt {
+	background-color: #ff5740;
+}
+.footer a.bewerbung {
+	background-color: #46c188;
+}
+.footer a.infomaterial {
+	background-color: #b06bf9;
+}
+
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (           min-resolution: 144dpi){
+	.galerie-back-btn {
+		background-image: url(/assets/site/assets/galerie-back@2x.png);
+		background-repeat: no-repeat;
+		background-size: 65px 65px;
+	}
+
+}
+
+

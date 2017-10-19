@@ -1,0 +1,244 @@
+/* 
+css: font 
+--------------------------------------------------
+AVA
+--------------------------------------------------
+by goldfischclub.de
+2017-02
+
+Montserrat Google Font
+*/
+
+
+body {
+	font-family: 'Montserrat',sans-serif;
+	font-size: 14px;	
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+}
+
+input, select {
+	font-family: 'Montserrat',sans-serif;
+	font-size: 14px;	
+}
+
+
+.mod-uebersicht .col-type-txt a,
+.nav-container a,
+a.menu,
+.footer a,
+.col-n3 .col-1 ul li a,
+.col-3 a {
+	text-decoration: none;
+}
+
+.content-wrapper .mod-text a,
+.col-n3 .col-1 ul li a:hover,
+.col-3 a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+.pfad,
+.pfad a {
+	font-size: 11px;
+}
+
+
+
+.a-14 h1,
+.a-15 h1,
+.a-26 h1,
+.a-27 h1 {
+	font-size: 60px;
+	line-height: 1.1em;
+}
+
+.a-14 .content-wrapper .mod-text p {
+	font-size: 20px;
+	line-height: 1.1em;
+}
+
+.a-13 .content-wrapper .mod-text p,
+.a-13 .content-wrapper .mod-text a {
+	font-size: 40px;
+	line-height: 1.3em;
+}
+
+.bildunterschrift,
+.mod-direktoren-lehrende a,
+.mod-direktoren-lehrende span,
+.mod-bild-text *,
+.nav-container *, 
+.nav-container .mod-text p,
+.nav-container .mod-text a,
+a.menu,
+.footer a {
+	font-size: 12px;
+}
+
+
+.a-2 .col-n3 .col h1,
+.a-2 .col-n3 .col h2,
+.a-2 .col-n3 .col h3,
+.a-2 .col-n3 .col h4,
+.a-2 .col-n3 .col p,
+.a-2 .col-n3 .col a,
+.a-2 .col-n3 .col li,
+.col-n3 .col-3 h2,
+.col-n3 .col-3 h3,
+.col-n3 .col-3 h4,
+.col-n3 .col-3 .mod-text p,
+.col-n3 .col-3 .mod-text a,
+.col-n3 .col-3 .mod-text li,
+.logo-name {
+	font-size: 13px;
+}
+
+
+
+
+.btn {
+	font-size: 15px;
+}
+
+input, select {
+	font-size: 16px;
+}
+
+/* unternavigation */
+.col-n3 h1,
+.col-n3 h2,
+.mod-text p,
+.mod-text a,
+.mod-text li,
+.col-n3 .col-1 ul li a {
+	font-size: 16px;
+}
+
+.t-c2 .col-2 h4,
+.t-c2 .col-2 .mod-text p,
+.t-c2 .col-2 .mod-text a {
+	font-size: 12px;
+	line-height: 1.3em;
+}
+
+
+.a-4 .mod-text p {
+	font-size: 20px;
+}
+
+
+
+
+.mod-uebersicht .col-type-txt a,
+.mod-text-bild .c-1 span {
+	font-size: 55px;
+	font-weight: 600;
+	letter-spacing: 1.8px
+}
+
+/* tablet landscape */
+@media handheld, only screen and (max-width: 1030px) {
+	.mod-uebersicht .col-type-txt a,
+	.mod-text-bild .c-1 span {
+		font-size: 45px;
+	}
+	.a-14 h1,
+	.a-15 h1,
+	.a-26 h1,
+	.a-27 h1  {
+		font-size: 30px;
+	}
+}
+
+/* tablet portrait */
+@media handheld, only screen and (max-width: 800px) {
+	.mod-uebersicht .col-type-txt a,
+	.mod-text-bild .c-1 span {
+		font-size: 36px;
+	}
+
+}
+
+/* mobile */
+@media handheld, only screen and (max-width: 700px) {
+	.mod-uebersicht .col-type-txt a,
+	.mod-text-bild .c-1 span {
+		font-size: 30px;
+	}
+	.a-13 .content-wrapper .mod-text p,
+	.a-13 .content-wrapper .mod-text a {
+		font-size: 24px;
+		line-height: 1.3em;
+	}
+	
+	.a-14 h1,
+	.a-15 h1,
+	.a-26 h1,
+	.a-27 h1  {
+		font-size: 24px;
+	}
+
+}
+
+.nav-container li,
+.nav-container li a {
+	line-height: 1.4em;
+}
+
+.nav-container li a,
+.col-3 ul li a,
+.col-n3 .col-1 ul li a {
+	line-height: 1em;
+}
+
+
+.logo-name,
+.bildunterschrift,
+.col-n3 .col-3 h2,
+.col-n3 .col-3 h3,
+.col-n3 .col-3 h4 {
+	line-height: 1.3em;
+}
+
+.mod-bild-text p {
+	line-height: 1.35em;
+}
+
+.a-2 .col-n3 .col h1,
+.a-2 .col-n3 .col h2,
+.a-2 .col-n3 .col h3,
+.a-2 .col-n3 .col h4 {
+	line-height: 1.3em;
+}
+
+
+.mod-direktoren-lehrende .col,
+.mod-uebersicht .col-type-txt a,
+.mod-text-bild .c-1 span {
+	line-height: 1.1em;
+}
+
+
+.mod-text p,
+.mod-text a,
+.mod-text li {
+	line-height: 1.4em;
+}
+
+.a-13 .content-wrapper .mod-text p,
+.mod-galerie .bilddetails span.titel,
+.bildunterschrift span,
+.mod-direktoren-lehrende span,
+.nav-container a,
+.nav-container p,
+.col-n3 .col-1 ul li.aktiv a,
+.footer a {
+	font-weight: bold;
+}
+
+
+

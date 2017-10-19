@@ -1,0 +1,188 @@
+/*  
+layout basis 
+goldfischclub.de
+
+*/
+
+
+.wrapper {
+	width: 100%;
+	position: absolute;
+}
+
+.col,
+.cols {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+.col {
+	width: 49.4%;
+}
+
+/* outer container */
+.container {
+	display: block;
+	width: 100%;
+}
+
+/* main column */
+.container-wrap {
+	margin: 0 auto;
+}
+
+
+
+/* content column */
+.main {
+	position: relative;
+}
+
+
+
+
+
+/* --------------------------------------------------
+Swiper Galerie, 100$ Breite, fixed Höhe 
+*/
+.swiper-container {
+    width: 100%;
+    margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+}
+
+.swiper-slide {
+    background-position: 50% 50%;
+    /*
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	*/
+  	width: 100%;
+	height: 720px;
+}
+
+/* --------------------------------------------------
+Swiper Bttns
+*/
+a.page-btn {
+	top: 88%;
+	position: absolute;
+	z-index: 10000;
+	display: block;
+	width: 87px;
+	height: 63px;
+	background-image: url(/assets/site/assets/ava-galerie-links.png);
+	background-position: center center;
+}
+a.page-btn.next {
+	right: 0;
+	background-image: url(/assets/site/assets/ava-galerie-rechts.png);
+}
+
+
+
+
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (           min-resolution: 144dpi){
+	a.page-btn {
+		/*background-image: url(/assets/basis/css/assets/ic-slider-control-left@2x.png);*/
+	}
+	a.page-btn.next {
+		/*background-image: url(/assets/basis/css/assets/ic-slider-control-right@2x.png);*/
+	}
+}
+
+@media handheld, only screen and (max-width: 700px) {
+	a.page-btn,
+	a.page-btn.next  {
+		background-image: none;
+	}
+}
+
+/* --------------------------------------------------
+Swiper Pagination
+*/
+.swiper-container-horizontal > .swiper-pagination {
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    zoom: 1;
+}
+
+
+
+
+
+
+/* fullwidth left and right alignment
+.swiper-pagination-align-left
+.swiper-pagination-align-right
+.swiper-pagination-align-content-left
+ */
+.swiper-pagination-align-left {
+	text-align: left;
+	padding-left: 20px;
+}
+.swiper-pagination-align-right {
+	text-align: right;
+	padding-right: 20px;
+}
+.swiper-container-horizontal > .swiper-pagination-align-content-left {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    text-align: left;
+}
+.swiper-container-horizontal > .swiper-pagination-align-content-left .swiper-pagination-bullet {
+    margin: 0 15px 0 0;
+}
+
+
+/* round bullets */
+.swiper-pagination-style-round .swiper-pagination-bullet {
+	background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    opacity: 0.3;
+}
+.swiper-pagination-style-round .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+
+/* quad bullets */
+.swiper-pagination-style-quad .swiper-pagination-bullet {
+	background-color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    opacity: 0.3;
+}
+.swiper-pagination-style-quad .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

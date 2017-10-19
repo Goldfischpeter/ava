@@ -1,0 +1,435 @@
+/* 
+css: layout 
+--------------------------------------------------
+AVA
+--------------------------------------------------
+by goldfischclub.de
+2017-02
+*/
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+.wrap {
+	position: relative;
+	min-height: 100%;
+}
+
+.col {
+    width: 47%;
+}
+
+.content-wrapper {
+	margin-left: 16px;
+	max-width: 1100px;
+	padding-bottom: 70px;
+}
+
+/* 100% Breite */
+.a-2 .content-wrapper,
+.a-13 .content-wrapper {
+	max-width: inherit;
+}
+/* impressum */
+.a-4 .content-wrapper {
+	max-width: 40%;
+}
+
+.a-20 .content-wrapper {
+	max-width: 1300px;
+}
+
+/* zentrieren */
+.algn-2 .content-wrapper {
+	margin: 0 auto;
+}
+
+/* tablet landscape */
+@media handheld, only screen and (max-width: 1050px) {
+	.a-4 .content-wrapper {
+		max-width: 80%;
+	}
+	.content-wrapper {
+		max-width: 1010px;
+		margin-left: 10px;
+		padding-bottom: 90px;
+	}
+}
+
+/* tablet portrait */
+@media handheld, only screen and (max-width: 800px) {
+	.a-4 .content-wrapper,
+	.content-wrapper {
+		max-width: 90%;
+	}
+}
+
+
+
+.pfad {
+	padding-top: 35px;
+	padding-bottom: 40px;
+	margin-left: 16px;
+}
+.a-11 .pfad {
+	position: absolute;
+	z-index: 100;
+}
+
+
+
+
+/* smartphone landscape */
+@media handheld, only screen and (max-width: 700px) {
+	.pfad {
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+}
+
+.header {
+	width: 100%;
+}
+.header .meta {
+	width: 100%;
+	position: fixed;
+	z-index: 101;
+}
+
+
+.t-detailseite .header {
+	height: 75px;
+}
+.t-startseite .header {
+	height: 500px;
+}
+
+
+.logo,
+.logo-name {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.logo {
+	width: 87px;
+	height: 58px;
+}
+.logo-name {
+	padding: 12px 14px;
+	margin-left: 30px;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 71%;
+	padding: 7px 18px 8px 18px;
+}
+
+@media handheld, only screen and (max-width:750px) {
+	.menu {
+		left: 65%;
+	}
+}
+
+
+@media handheld, only screen and (max-width:700px) {
+	.menu {
+		left: 60%;
+	}
+}
+
+@media handheld, only screen and (max-width:500px) {
+	.menu {
+		left: 40%;
+	}
+}
+
+
+@media handheld, only screen and (max-width:420px) {
+
+	.t-startseite .header {
+		height: 380px;
+	}
+
+}
+
+
+@media handheld, only screen and (max-width:350px) {
+	.menu {
+		left: 30%;
+	}
+}
+
+
+.search {
+	float: right;
+	width: 40px;
+	height: 36px;
+	padding: 0;
+	margin: 0;
+}
+.search-open {
+	width: 224px;
+}
+
+.search a.search-trigger {
+	width: 40px;
+	height: 36px;
+	margin-top: 1px;
+	margin-left: -1px;
+	display: inline-block;
+}
+.search-open a.search-trigger {
+	margin: -6px 0 0 0;
+}
+
+.search .search-eingabe {
+	display: none;
+}
+.search-open .search-eingabe {
+	width: 180px;
+	display: inline-block;
+}
+.search .search-eingabe input {
+	width: 100%;
+	font-size: 13px;
+	color: #fff;
+}
+
+@media handheld, only screen and (max-width:800px) {
+	.search-open {
+		width: 154px;
+	}
+	.search-open .search-eingabe {
+		width: 110px;
+	}
+
+
+}
+
+
+@media handheld, only screen and (max-width: 760px) {
+	.logo-name {
+		display: none;
+	}
+	.header .meta {
+		width: 100%;
+	}
+}
+
+
+
+/* navigation */
+
+.nav-layer {
+	width: 100%; 
+	height: 100%;
+	position: absolute;
+	display: none;
+	z-index: 2299;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, 0.8);
+}
+
+.nav-container {
+	position: fixed;
+	display: none;
+	z-index: 100;
+	top: 32px;
+	right: 5%;
+	width: 900px;
+	padding: 45px 25px;
+}
+.nav-container .col {
+	width: 32%;
+}
+.nav-container .col ul {
+	margin-bottom: 16px;
+}
+.nav-container .col ul li {
+	margin-bottom: 0px;
+}
+
+
+.nav-container .col ul li a {
+	position: relative;
+}
+
+.nav-container .col ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: -1px;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-container .col ul li a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+
+@media handheld, only screen and (max-width: 1050px) {
+	
+	.header .meta {
+		width: 100%;
+		position: absolute;
+	}
+	
+	.nav-container {
+		position: absolute;
+		width: 92%;
+		right: 0%;
+		left: 0%;
+		padding: 35px 4%;
+	}
+	.nav-container .c-1,
+	.nav-container .c-2 {
+		width: 49%;
+	}
+	.nav-container .c-3 {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+}
+
+
+
+@media handheld, only screen and (max-width: 450px) {
+
+	.nav-container {
+		width: 96%;
+		right: 0%;
+		left: 0%;
+		padding: 2%;
+		padding-bottom: 10%;
+	}
+	.nav-container .c-1,
+	.nav-container .c-2,
+	.nav-container .c-3 {
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+
+
+
+
+
+
+/* basic content grid */
+
+.col-n2 .col-1,
+.col-n3 .col-1,
+.col-n3 .col-2 {
+	padding-right: 3%;
+}
+
+.col-n2 .col-1 {
+	width: 46%;
+}
+.col-n2 .col-2 {
+	width: 50%;
+}
+
+
+.t-c2 .col-n2 .col-1 {
+	width: 73%;
+}
+.t-c2 .col-n2 .col-2 {
+	width: 20%;
+}
+
+
+.col-n3 .col-1 {
+	width: 27%;
+}
+.col-n3 .col-2 {
+	width: 46%;
+}
+.col-n3 .col-3 {
+	width: 20%;
+}
+
+
+
+
+
+.a-2 .col-n3 .col-1 {
+	width: 36%;
+}
+.a-2 .col-n3 .col-2 {
+	width: 36%;
+}
+.a-2 .col-n3 .col-3 {
+	width: 20%;
+}
+
+
+@media handheld, only screen and (max-width: 800px) {
+	.t-c2 .col-n2 .col,
+	.col-n2 .col,
+	.col-n3 .col,
+	.a-2 .col-n3 .col{
+		width: 95%;
+		padding: 0;
+		padding-right: 5%;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+.w100 {
+	
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+	position: fixed;
+	bottom: 0;
+	z-index: 98;
+	width: 100%;
+	text-align: center;
+}
+.footer a {
+	display: inline-block;
+	padding: 4px 18px 3px 18px;
+}
+
+.footer a.spiegelwelt {
+	float: left;
+}
+.footer a.bewerbung {
+	
+}
+.footer a.infomaterial {
+	float: right;
+}
+
+@media handheld, only screen and (max-width: 350px) {
+	.footer a {
+		display: inline-block;
+		padding: 4px 14px 3px 14px;
+	}
+}
